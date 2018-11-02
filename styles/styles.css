@@ -173,14 +173,20 @@ template {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.wrapper {
+  width: 80%;
+  margin: 0 auto; }
+
 .header {
   background: #345231;
   color: #f6f6f6;
-  height: 60vh; }
+  height: 60vh;
+  text-transform: uppercase; }
   .header nav {
     margin: 0;
     padding: 0;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; }
     .header nav ul {
       list-style: none;
       margin: 0; }
@@ -190,4 +196,23 @@ template {
           text-decoration: none;
           color: #f6f6f6; }
         .header nav ul li span {
-          font-size: 24px; }
+          font-size: 36px;
+          font-family: 'Abril Fatface', cursive; }
+  .header .title-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .header .title-box .__title {
+      position: relative;
+      font-family: 'Abril Fatface', cursive; }
+      .header .title-box .__title h1 {
+        font-size: 154px;
+        margin: 0;
+        padding: 0; }
+      .header .title-box .__title img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        -webkit-transform: translate(-40%, -15%);
+        -ms-transform: translate(-40%, -15%);
+        transform: translate(-40%, -15%); }

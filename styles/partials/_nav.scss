@@ -2,10 +2,12 @@
 	background: #345231; // pine green
 	color: #f6f6f6; // white
 	height: 60vh;
+	text-transform: uppercase;
 	nav {
 		margin: 0;
 		padding: 0;
 		text-align: center;
+		font-family: 'Montserrat', sans-serif;
 		ul {
 			list-style: none;
 			margin: 0;
@@ -16,11 +18,33 @@
 					color: #f6f6f6; // white
 				}
 				span {
-					font-size: 24px;
+					font-size: 36px;
+					font-family: 'Abril Fatface', cursive;
 					// margin: 0;
 					// padding: 0;
 				}
 			}
 		}
+	}
+	.title-box {
+		display: flex;
+		
+		.__title {
+			position: relative;
+			// border: 1px solid red;
+			font-family: 'Abril Fatface', cursive;
+			h1 {
+				font-size: 154px;
+				margin: 0;
+				padding: 0;
+			}
+			img {
+				position: absolute;
+				left: 0;
+				top: 0;
+				transform: translate(-40%, -15%)
+			}
+		}
+
 	}
 }
