@@ -1,4 +1,26 @@
-header {
+.header {
 	background: #345231; // pine green
 	color: #f6f6f6; // white
+	height: 60vh;
+	nav {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		ul {
+			list-style: none;
+			margin: 0;
+			li {
+				display: inline-block;
+				a {
+					text-decoration: none;
+					color: #f6f6f6; // white
+				}
+				span {
+					font-size: 24px;
+					// margin: 0;
+					// padding: 0;
+				}
+			}
+		}
+	}
 }
