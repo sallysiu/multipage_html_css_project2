@@ -1,0 +1,28 @@
+.willow-journey {
+	border: 2px solid lime;
+	
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		align-content: flex-start;
+		
+	}
+	&--photo,
+	&--content {
+		flex: 0 1 auto;
+		border: 3px dashed purple;
+	}
+
+	&--photo {
+		display: block;
+		width: 30%;
+	}
+
+	&--content {
+		margin: 100px 0;
+		padding-left: 5%;
+		width: 70%;
+	}
+}

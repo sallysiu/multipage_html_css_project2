@@ -22,6 +22,11 @@
 
 		&.second {
 			flex-direction: row-reverse;
+			text-align: right;
+			
+			.blog-post--content {
+				padding-left: 10%;
+			}
 		}
 	}
 
