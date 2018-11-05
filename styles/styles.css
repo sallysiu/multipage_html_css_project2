@@ -222,26 +222,12 @@ p {
   margin: 30px 0 0 0;
   padding: 10px 20px; }
 
-.header {
+.header-main {
   background: #345231;
   color: #f6f6f6;
   height: 100vh;
   text-transform: uppercase; }
-  .header nav {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif; }
-    .header nav ul {
-      list-style: none;
-      margin: 0; }
-      .header nav ul li {
-        display: inline-block; }
-        .header nav ul li a {
-          text-decoration: none;
-          color: #f6f6f6; }
-        .header nav ul li span {
-          font-size: 36px;
-          font-family: 'Abril Fatface', cursive; }
-  .header .title-box {
+  .header-main .title-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -257,22 +243,41 @@ p {
     align-items: center;
     -ms-flex-line-pack: center;
     align-content: center; }
-    .header .title-box .__title {
+    .header-main .title-box__title {
       position: relative;
+      border: 1px solid red;
       font-family: 'Abril Fatface', cursive; }
-      .header .title-box .__title h1 {
+      .header-main .title-box__title--main {
         font-size: 140px;
         margin: 0;
         padding-left: 8%; }
-      .header .title-box .__title .willow {
+      .header-main .title-box__title .willow {
         position: absolute;
         left: 0;
         top: 0;
         -webkit-transform: translate(0%, -10%);
         -ms-transform: translate(0%, -10%);
         transform: translate(0%, -10%); }
-    .header .title-box .willow-photo {
+    .header-main .title-box .willow-photo {
       width: 40%; }
+
+nav {
+  background: #345231;
+  color: #f6f6f6;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif; }
+  nav ul {
+    list-style: none;
+    margin: 0; }
+    nav ul li {
+      display: inline-block; }
+      nav ul li a {
+        text-decoration: none;
+        color: #f6f6f6; }
+      nav ul li span {
+        font-size: 36px;
+        font-family: 'Abril Fatface', cursive; }
 
 .about {
   background: #F6F6F6;
@@ -429,3 +434,22 @@ p {
   color: white;
   text-align: center;
   padding: 5px; }
+
+.header {
+  height: 50vh;
+  background: url(../../assets/blog-image-1.jpg) no-repeat center; }
+  .header .wrapper {
+    position: relative; }
+  .header .title-box__title {
+    border: 2px solid pink;
+    height: 100px; }
+    .header .title-box__title .landing {
+      color: #f6f6f6;
+      font-size: 80px;
+      line-height: 92px;
+      letter-spacing: 1px;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0; }

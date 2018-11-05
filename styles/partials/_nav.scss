@@ -1,27 +1,8 @@
-.header {
+.header-main {
 	background: #345231; // pine green
 	color: #f6f6f6; // white
 	height: 100vh;
 	text-transform: uppercase;
-	nav {
-		text-align: center;
-		font-family: 'Montserrat', sans-serif;
-		ul {
-			list-style: none;
-			margin: 0;
-			li {
-				display: inline-block;
-				a {
-					text-decoration: none;
-					color: #f6f6f6; // white
-				}
-				span {
-					font-size: 36px;
-					font-family: 'Abril Fatface', cursive;
-				}
-			}
-		}
-	}
 	.title-box {
 		display: flex;
 		flex-direction: flow;
@@ -29,11 +10,11 @@
 		align-items: center;
 		align-content: center;
 
-		.__title {
+		&__title {
 			position: relative;
-			// border: 1px solid red;
+			border: 1px solid red;
 			font-family: 'Abril Fatface', cursive;
-			h1 {
+			&--main {
 				font-size: 140px;
 				margin: 0;
 				padding-left: 8%;
@@ -49,5 +30,28 @@
 			width: 40%;
 		}
 
+	}
+}
+
+nav {
+	background: #345231; // pine green
+	color: #f6f6f6; // white
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	ul {
+		list-style: none;
+		margin: 0;
+		li {
+			display: inline-block;
+			a {
+				text-decoration: none;
+				color: #f6f6f6; // white
+			}
+			span {
+				font-size: 36px;
+				font-family: 'Abril Fatface', cursive;
+			}
+		}
 	}
 }
