@@ -1,0 +1,28 @@
+.blog {
+	// background: lightblue;
+
+	.blog-post {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		border: 2px dashed black;
+		&--photo,
+		&--content {
+			flex: 0 1 auto;
+			width: 50%;
+		}
+
+		&--content {
+			// background: lightgreen;
+			padding: 5%;
+
+		}
+
+		&.second {
+			flex-direction: row-reverse;
+		}
+	}
+
+}
