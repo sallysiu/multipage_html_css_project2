@@ -1,31 +1,20 @@
 .header {
 	height: 50vh;
 	background: url(../../assets/blog-image-1.jpg) no-repeat center;
-	// border: 7px solid goldenrod;
+	// border: 2px solid goldenrod;
+	position: relative;
 	
-	.wrapper {
-		position: relative;
-	}
-	.title-box__title {
-		border: 2px solid pink;
-		height: 100px;
-		// position: absolute;
-		// bottom: 0;
-		// left: 0;
-		
-		
-		.landing {
-			color: #f6f6f6; // white
-			font-size: 80px;
-			line-height: 92px;
-			letter-spacing: 1px;
-			padding: 0;
-			margin: 0;
-		position: absolute;
+
+
+	.landing-title {
+			position: absolute;
 		bottom: 0;
-		left: 0;
-			
-		}
+		color: #f6f6f6; // white
+		// color: lightseagreen;
+		font-size: 80px;
+		// line-height: 92px;
+		line-height: 62px;
+		letter-spacing: 1px;
 	}
 	
 }
