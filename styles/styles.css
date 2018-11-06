@@ -186,7 +186,7 @@ ul li {
   margin: 0 auto;
   border: 1px solid blue; }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Abril Fatface', cursive;
   margin: 0;
   padding: 0;
@@ -202,12 +202,23 @@ h3 {
   letter-spacing: 1px;
   padding: 20px 0; }
 
+h4 {
+  font-size: 24px;
+  letter-spacing: 1px;
+  padding: 20px 0; }
+
 p {
   padding: 0;
   margin: 0;
   font-family: 'Monserrat', sans-serif;
   font-size: 20px;
   line-height: 32px; }
+
+img {
+  width: 100%; }
+
+a {
+  text-decoration: none; }
 
 .moreLink {
   text-decoration: none;
@@ -435,6 +446,9 @@ nav {
   text-align: center;
   padding: 5px; }
 
+.main-blog {
+  background: #f6f6f6; }
+
 .header {
   height: 50vh;
   background: url(../../assets/blog-image-1.jpg) no-repeat center;
@@ -446,3 +460,38 @@ nav {
     font-size: 80px;
     line-height: 62px;
     letter-spacing: 1px; }
+
+.aside {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .aside__about {
+    padding: 20px;
+    background: white;
+    margin-bottom: 20px; }
+    .aside__about--link {
+      color: #709b6b;
+      font-weight: bolder; }
+  .aside__recent-posts {
+    padding: 20px;
+    background: white; }
+    .aside__recent-posts--list {
+      font-family: 'Monserrat', sans-serif;
+      padding: 0;
+      margin: 0;
+      font-size: 20px;
+      line-height: 32px;
+      list-style: none; }
+      .aside__recent-posts--list--item:before {
+        content: "\0387";
+        padding: 0 10px;
+        display: inline; }
+    .aside__recent-posts--link {
+      color: black; }
+      .aside__recent-posts--link:hover {
+        text-decoration: underline; }

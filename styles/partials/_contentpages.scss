@@ -1,3 +1,7 @@
+.main-blog {
+	background: #f6f6f6;
+}
+
 .header {
 	height: 50vh;
 	background: url(../../assets/blog-image-1.jpg) no-repeat center;
@@ -16,5 +20,62 @@
 		line-height: 62px;
 		letter-spacing: 1px;
 	}
-	
 }
+
+.aside {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+
+	&__about {
+		padding: 20px;
+		background: white;
+		margin-bottom: 20px;
+
+		&--link {
+			color:#709b6b;
+			font-weight: bolder;
+		}
+	}
+
+	&__recent-posts {
+		padding: 20px;
+		background: white;
+
+		&--list {
+			font-family: 'Monserrat', sans-serif;
+			padding: 0;
+			margin: 0;
+			font-size: 20px;
+			line-height: 32px;
+			list-style: none;
+
+			&--item:before {
+				content: "\0387";
+				padding: 0 10px;
+				display: inline;
+			
+			}
+
+		}
+		&--link {
+			color: black;
+
+			&:hover  {
+				text-decoration: underline;
+			}
+		}
+
+
+	}
+
+	
+
+	
+
+
+
+
+}
+
+

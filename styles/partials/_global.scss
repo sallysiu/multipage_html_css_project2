@@ -4,7 +4,7 @@
 	border: 1px solid blue;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	font-family: 'Abril Fatface', cursive;
 	margin: 0;
 	padding: 0;
@@ -24,6 +24,12 @@ h3 {
 	padding: 20px 0;
 }
 
+h4 {
+	font-size: 24px;
+	letter-spacing: 1px;
+	padding: 20px 0;
+}
+
 
 
 p {
@@ -33,6 +39,15 @@ p {
 	font-size: 20px;
 	line-height: 32px;
 }
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
 
 .moreLink {
 	text-decoration: none;
