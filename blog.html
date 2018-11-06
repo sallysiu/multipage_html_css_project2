@@ -28,11 +28,11 @@
 			</div>
 	</header>
 
-	<main class="main-blog">
+	<main class="main blog">
 		<div class="wrapper">
 			
 			<section class="blogpost">
-				<section class="blogpost__content">
+				<section class="blogpost__content border">
 					<h3>My Favourite Travel Destinations</h3>
 					<p class="blogpost__content--author">Monday October 8th, 2018 by Willow</p>
 					<p class="blogpost__content--words">Curabitur lobortis id lorem id bibendu. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollictudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
@@ -45,14 +45,40 @@
 					<p class="blogpost__content--words">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis.</p>
 
 				</section>
-				<section class="blogpost--comments">
-					<div>
+				<section class="blogpost__comments">
+					<div class="blogpost__comments-box">
+						<img src="assets/blog-image-3.jpg" alt="photo of commenter Barb" class="blogpost__comments--photo">
+						<div class="blogpost__comments--text">
+							<p>Tuesday October 9th, 2018 by Barb</p>
+							<p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Set sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Macecenas eu varius risus, eu aliquet arcu.</p>
+						</div>
 
 					</div>
-					<div>
+					<div class="blogpost__comments-box border">
+						<img src="assets/blog-image-4.jpg" alt="photo of commenter Daisy" class="blogpost__comments--photo">
+						<div class="blogpost__comments--text">
+							<p>Wednesday October 10th, 2018 by Daisy</p>
+							<p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+						</div>
 
 					</div>
-					<form action=""></form>
+					<form action="" class="form">
+						<label for="commentor-name" class="visuallyhidden">Name</label>
+						<input type="text" name="commentor-name" placeholder="Name" class="form__input">
+
+						<label for="email-address" class="visuallyhidden">Email address</label>
+						<input type="email" name="email-address" placeholder="Email address" class="form__input">
+
+						<label for="comment-box" class="visuallyhidden">Comment here</label>
+						<input type="textbox" name="comment-box" placeholder="Comment" class="form__input--textbox">
+						
+						<label for="post-comment" class="visuallyhidden">Post comment</label>
+						<input type="submit" name="post-comment" value="Post comment" class="form__input--button">
+
+
+
+
+					</form>
 
 				</section>
 	
@@ -83,6 +109,11 @@
 
 	</main>
 
+	<footer>
+		<div class="copyright">
+			<p>Copyright &copy; 2018 HackerYou</p>
+		</div>
+	</footer>
 	
 </body>
 </html>
