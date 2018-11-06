@@ -448,6 +448,41 @@ nav {
 
 .main-blog {
   background: #f6f6f6; }
+  .main-blog .wrapper {
+    padding: 80px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+    .main-blog .wrapper .blogpost {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      border-bottom: 10px solid #709b6b;
+      width: 68%;
+      background: white; }
+      .main-blog .wrapper .blogpost__content {
+        padding: 20px; }
+        .main-blog .wrapper .blogpost__content--author {
+          padding: 0 0 15px 0; }
+        .main-blog .wrapper .blogpost__content--words {
+          border: 1px  blue;
+          padding: 10px 0; }
+    .main-blog .wrapper .aside {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+      order: -1; }
 
 .header {
   height: 50vh;
