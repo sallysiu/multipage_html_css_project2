@@ -524,11 +524,11 @@ nav {
       -ms-flex-order: -1;
       order: -1; }
 
-.header {
+.header-blog {
   height: 50vh;
-  background: url(../../assets/blog-image-1.jpg) no-repeat center;
+  background: url(/assets/blog-image-1.jpg) no-repeat center;
   position: relative; }
-  .header .landing-title {
+  .header-blog .landing-title {
     position: absolute;
     bottom: 0;
     color: #f6f6f6;
@@ -591,15 +591,23 @@ nav {
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     width: calc((100% - 20px) / 2);
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
+    width: 48%;
     border: none;
     margin: 20px 0;
     padding: 20px;
     font-size: 20px;
     line-height: 32px; }
     .form__input--textbox {
+      border: none;
       width: 100%;
+      margin: 20px 0;
       padding: 20px;
+      font-size: 20px;
+      line-height: 32px;
       resize: none; }
+    .form__input--button {
+      width: 100%;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 20px 0;
+      padding: 15px; }
