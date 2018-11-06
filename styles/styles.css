@@ -600,4 +600,6 @@ nav {
     font-size: 20px;
     line-height: 32px; }
     .form__input--textbox {
-      padding: 20px; }
+      width: 100%;
+      padding: 20px;
+      resize: none; }
