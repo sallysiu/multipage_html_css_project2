@@ -10,11 +10,11 @@
 		width: calc((100% - 20px) / 2);
 		width: 48%;
 
-		// -moz-appearance: none;
-		// -webkit-appearance: none;
-		// appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
 		border: none;
-		margin: 20px 0;
+		margin: 15px 0;
 		padding: 20px;
 		font-size: 20px;
 		line-height: 32px;
@@ -22,7 +22,7 @@
 		&--textbox {
 			border: none;
 			width: 100%;
-			margin: 20px 0;
+			margin: 15px 0;
 			padding: 20px;
 			font-size: 20px;
 			line-height: 32px;
@@ -31,10 +31,16 @@
 
 		&--button {
 			width: 100%;
+			background: #e4a436;
+			border: none;
 			text-transform: uppercase;
 			text-align: center;
-			margin: 20px 0;
-			padding: 15px;
+			font-family: 'Abril Fatface', cursive;
+			font-size: 20px;
+			line-height: 29px;
+			letter-spacing: 1px;
+			margin: 15px 0;
+			padding: 10px;
 		}
 
 

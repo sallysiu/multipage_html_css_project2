@@ -186,14 +186,6 @@ template {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
-nav ul {
-  margin: 0;
-  padding: 0; }
-
-ul li {
-  margin: 0;
-  padding: 0; }
-
 .wrapper {
   width: 80%;
   margin: 0 auto;
@@ -285,23 +277,47 @@ a {
     .header-main .title-box .willow-photo {
       width: 40%; }
 
-nav {
+.nav {
   background: #345231;
   color: #f6f6f6;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif; }
-  nav ul {
+  .nav__ul {
     list-style: none;
-    margin: 0; }
-    nav ul li {
-      display: inline-block; }
-      nav ul li a {
-        text-decoration: none;
-        color: #f6f6f6; }
-      nav ul li span {
-        font-size: 36px;
-        font-family: 'Abril Fatface', cursive; }
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .nav__li {
+    display: inline-block;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    margin: 0;
+    padding: 0 2%; }
+    .nav__li--link {
+      text-decoration: none;
+      color: #f6f6f6;
+      font-size: 20px;
+      line-height: 29px;
+      letter-spacing: 1px;
+      font-weight: bold; }
+      .nav__li--link--active {
+        color: #e4a436; }
+      .nav__li--link:hover {
+        border-bottom: 2px solid #e4a436; }
+    .nav__li--span {
+      font-size: 40px;
+      font-family: 'Abril Fatface', cursive; }
 
 .about {
   background: #F6F6F6;
@@ -488,32 +504,34 @@ nav {
         .main.blog .wrapper .blogpost__content--words {
           border: 1px  blue;
           padding: 10px 0; }
-      .main.blog .wrapper .blogpost__comments-box {
-        background: white;
-        padding: 20px;
-        margin: 30px 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: no-wrap;
-        flex-wrap: no-wrap;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        align-items: flex-start; }
-      .main.blog .wrapper .blogpost__comments--photo {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 1 auto;
-        flex: 0 1 auto;
-        width: 20%; }
-      .main.blog .wrapper .blogpost__comments--text {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 1 auto;
-        flex: 0 1 auto;
-        margin-left: 20px;
-        width: 80%; }
+      .main.blog .wrapper .blogpost__comments {
+        margin-top: 50px; }
+        .main.blog .wrapper .blogpost__comments-box {
+          background: white;
+          padding: 20px;
+          margin: 30px 0;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          align-items: flex-start; }
+        .main.blog .wrapper .blogpost__comments--photo {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+          width: 20%; }
+        .main.blog .wrapper .blogpost__comments--text {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+          margin-left: 20px;
+          width: 80%; }
       .main.blog .wrapper .blogpost .border {
         border-bottom: 10px solid #709b6b; }
     .main.blog .wrapper .aside {
@@ -592,22 +610,31 @@ nav {
     flex: 0 1 auto;
     width: calc((100% - 20px) / 2);
     width: 48%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
     border: none;
-    margin: 20px 0;
+    margin: 15px 0;
     padding: 20px;
     font-size: 20px;
     line-height: 32px; }
     .form__input--textbox {
       border: none;
       width: 100%;
-      margin: 20px 0;
+      margin: 15px 0;
       padding: 20px;
       font-size: 20px;
       line-height: 32px;
       resize: none; }
     .form__input--button {
       width: 100%;
+      background: #e4a436;
+      border: none;
       text-transform: uppercase;
       text-align: center;
-      margin: 20px 0;
-      padding: 15px; }
+      font-family: 'Abril Fatface', cursive;
+      font-size: 20px;
+      line-height: 29px;
+      letter-spacing: 1px;
+      margin: 15px 0;
+      padding: 10px; }
