@@ -3,6 +3,7 @@
 	color: #f6f6f6; // white
 	height: 100vh;
 	text-transform: uppercase;
+
 	.title-box {
 		display: flex;
 		flex-direction: row;
@@ -12,21 +13,29 @@
 
 		&__title {
 			position: relative;
-			border: 1px solid red;
+			flex: 0 1 auto;
+			// border: 3px solid yellow;
+			width: 55%;
 			font-family: 'Abril Fatface', cursive;
+
 			&--main {
-				font-size: 140px;
+				font-size: 130px;
+				text-align: right;
 				margin: 0;
-				padding-left: 8%;
+				padding-left: 6%;
+				// color: blue;
+				// border: 1px dashed white;
 			}
-			.willow {
+			&--image {
 				position: absolute;
+				width: 20%;
 				left: 0;
 				top: 0;
 				transform: translate(0%, -10%)
 			}
 		}
 		.willow-photo {
+			flex: 0 1 auto;
 			width: 40%;
 		}
 

@@ -261,20 +261,28 @@ a {
     align-content: center; }
     .header-main .title-box__title {
       position: relative;
-      border: 1px solid red;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      width: 55%;
       font-family: 'Abril Fatface', cursive; }
       .header-main .title-box__title--main {
-        font-size: 140px;
+        font-size: 130px;
+        text-align: right;
         margin: 0;
-        padding-left: 8%; }
-      .header-main .title-box__title .willow {
+        padding-left: 6%; }
+      .header-main .title-box__title--image {
         position: absolute;
+        width: 20%;
         left: 0;
         top: 0;
         -webkit-transform: translate(0%, -10%);
         -ms-transform: translate(0%, -10%);
         transform: translate(0%, -10%); }
     .header-main .title-box .willow-photo {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
       width: 40%; }
 
 .nav {
@@ -342,23 +350,41 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
   border: 2px dashed black; }
-  .blog .blog-post--photo, .blog .blog-post--content {
+  .blog .blog-post--photo-background {
+    background: #345231;
+    width: 50%;
+    height: 100%;
+    border: 2px solid blueviolet; }
+    .blog .blog-post--photo-background--2 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      width: 50%;
+      height: 100%;
+      -ms-flex-item-align: stretch;
+      align-self: stretch;
+      display: inline-block; }
+  .blog .blog-post--content {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    width: 50%; }
-  .blog .blog-post--content {
+    width: 50%;
+    background: lightgreen;
     padding: 5%; }
     .blog .blog-post--content.favthings {
       padding-right: 10%; }
   .blog .blog-post.second {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
     text-align: right; }
     .blog .blog-post.second .blog-post--content {
-      padding-left: 10%; }
+      -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+      order: -1;
+      padding-left: 10%;
+      -ms-flex-item-align: start;
+      align-self: flex-start;
+      background: lightblue; }
+  .blog .blog-post--photo {
+    padding-left: 10%; }
 
 .willow-journey {
   border: 2px solid lime; }

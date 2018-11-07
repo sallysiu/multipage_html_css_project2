@@ -8,14 +8,31 @@
 		align-items: center;
 		justify-content: center;
 		border: 2px dashed black;
-		&--photo,
-		&--content {
-			flex: 0 1 auto;
+		// background: #345231;
+
+		&--photo-background {
+			background: #345231; // pine green
+			// flex: 1 0 auto;
 			width: 50%;
+			// display: inline-block ;
+			height: 100%;
+			border: 2px solid blueviolet;
+
+			&--2 {
+				flex: 0 1 auto;
+				width: 50%;
+				height: 100%;
+				align-self: stretch;
+				display: inline-block;
+				//background: #709b6b; // lighter dark green
+			}
+			
 		}
 
 		&--content {
-			// background: lightgreen;
+			flex: 0 1 auto;
+			width: 50%;
+			background: lightgreen;
 			padding: 5%;
 			&.favthings {
 				padding-right: 10%;
@@ -24,12 +41,22 @@
 		}
 
 		&.second {
-			flex-direction: row-reverse;
+			// flex-direction: row-reverse;
 			text-align: right;
 			
 			.blog-post--content {
+				order: -1;
+
 				padding-left: 10%;
+				align-self: flex-start;
+				background: lightblue;
 			}
+		}
+
+
+
+		&--photo {
+			padding-left: 10%;
 		}
 	}
 
