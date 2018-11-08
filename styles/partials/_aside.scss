@@ -11,6 +11,10 @@
 		&--link {
 			color:#709b6b; // grey green
 			font-weight: bolder;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 
@@ -70,7 +74,7 @@
 		color: #345231;
 
 		&:hover {
-			color: purple;
+			color: goldenrod;
 		}
 	}
 

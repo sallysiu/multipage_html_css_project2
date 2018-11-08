@@ -1,0 +1,74 @@
+.header-main {
+	background: #345231; // pine green
+	color: #f6f6f6; // white
+	height: 100vh;
+	text-transform: uppercase;
+
+	.title-box {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		align-content: center;
+
+
+		&__title {
+			position: relative;
+			margin-bottom: 50px;
+			flex: 0 1 auto;
+			width: 55%;
+			font-family: 'Abril Fatface', cursive;
+
+			&--main {
+				font-size: 130px;
+				text-align: right;
+				margin: 0;
+				padding-left: 6%;
+			}
+			&--image {
+				position: absolute;
+				width: 20%;
+				left: 0;
+				top: 0;
+				transform: translate(0%, -10%)
+			}
+		}
+		.willow-photo {
+			flex: 0 1 auto;
+			display: block;
+			box-shadow: 20px 20px white;
+			width: calc(45% - 40px);
+			margin: 0 20px 0 0;
+		}
+
+	}
+}
+
+
+.header-blog, 
+.header-contact {
+	height: 50vh;
+	// border: 2px solid goldenrod;
+	position: relative;
+
+	.landing-title {
+		position: absolute;
+		bottom: 0;
+		color: #f6f6f6; // white shade
+		font-size: 80px;
+		line-height: 60px;
+		letter-spacing: 1px;
+	}
+}
+ 
+.header-blog {
+	background: url(/assets/blog-image-1.jpg) no-repeat bottom;
+}
+
+.header-contact {
+	background: url(/assets/contact-image-1.jpg) no-repeat bottom;
+}
+
+
+
+

@@ -1,7 +1,7 @@
 .wrapper {
 	width: 80%;
 	margin: 0 auto;
-	border: 1px solid blue;
+	// border: 1px solid blue;
 }
 
 h1, h2, h3, h4 {
@@ -9,24 +9,22 @@ h1, h2, h3, h4 {
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 
 h2 {
 	font-size: 42px;
-	letter-spacing: 1px;
 	margin: 10px 0 20px 0;
 }
 
 h3 {
 	font-size: 32px;
-	letter-spacing: 1px;
 	padding: 20px 0;
 }
 
 h4 {
 	font-size: 24px;
-	letter-spacing: 1px;
 	padding: 20px 0;
 }
 
