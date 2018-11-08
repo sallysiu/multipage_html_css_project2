@@ -1,3 +1,5 @@
+// Aside section for Blog and Contact pages
+
 .aside {
 	width: 30%;
 	display: flex;
@@ -71,10 +73,10 @@
 		font-size: 40px;
 	}
 	.icon {
-		color: #345231;
+		color: #345231; // grey green
 
 		&:hover {
-			color: goldenrod;
+			color: #e4a436; // contrast color
 		}
 	}
 
