@@ -346,45 +346,61 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border: 2px dashed black; }
-  .blog .blog-post--photo-background {
-    background: #345231;
-    width: 50%;
-    height: 100%;
-    border: 2px solid blueviolet; }
-    .blog .blog-post--photo-background--2 {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-      flex: 0 1 auto;
-      width: 50%;
-      height: 100%;
-      -ms-flex-item-align: stretch;
-      align-self: stretch;
-      display: inline-block; }
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: relative; }
   .blog .blog-post--content {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     width: 50%;
-    background: lightgreen;
-    padding: 5%; }
+    height: 400px;
+    padding: 50px; }
     .blog .blog-post--content.favthings {
       padding-right: 10%; }
+  .blog .blog-post--photo {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    position: absolute;
+    bottom: 30px;
+    width: 50%;
+    height: 400px;
+    background: #345231;
+    position: relative; }
+    .blog .blog-post--photo.second {
+      background: #709b6b;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      height: 400px;
+      position: relative;
+      bottom: -30px; }
+  .blog .blog-post--background {
+    margin-left: 10%;
+    width: calc(80% - 20px);
+    position: absolute;
+    right: 20px;
+    bottom: 20px; }
+    .blog .blog-post--background.second {
+      width: calc(90% - 60px);
+      margin: 0;
+      margin-right: calc(10% + 20px);
+      position: absolute;
+      top: -20px;
+      left: -20px; }
+    .blog .blog-post--background--image {
+      height: 400px;
+      display: block; }
   .blog .blog-post.second {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
     text-align: right; }
     .blog .blog-post.second .blog-post--content {
-      -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-      order: -1;
-      padding-left: 10%;
-      -ms-flex-item-align: start;
-      align-self: flex-start;
-      background: lightblue; }
-  .blog .blog-post--photo {
-    padding-left: 10%; }
+      padding: 50px 5% 50px 10%; }
 
 .willow-journey {
   border: 2px solid lime; }
